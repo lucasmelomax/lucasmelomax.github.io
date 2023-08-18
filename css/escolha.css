@@ -1,0 +1,66 @@
+.p-escolha {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+.escolha-bicicleta {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 30px;
+  object-fit: cover;
+  max-width: 1400px;
+  overflow: auto;
+  margin-bottom: 100px;
+}
+
+.escolha-bicicleta img {
+  min-width: 300px;
+}
+
+.bicicletas-valores h2::before {
+  content: "";
+  height: 8px;
+  width: 13px;
+  display: inline-block;
+  background-color: var(--p1);
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+
+.bicicletas-valores:hover h2::before {
+  width: 25px;
+  transition: 0.5s;
+}
+
+.bicicletas-valores h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+.bicicletas-valores p {
+  font-size: 1.2rem;
+  color: var(--c7);
+  padding-top: 10px;
+  padding-left: 18px;
+}
+
+@media (max-width: 900px) {
+  .p-escolha{
+    font-size: 3rem;
+  }
+  .escolha-bicicleta h2{
+    font-size: 2rem;
+  }
+    .bicicletas-valores p{
+      font-size: 1.2rem;
+      text-align: start;
+    }
+}
+
+@media (max-width: 550px){
+  .p-escolha{
+      font-size: 2rem;
+  }
+}

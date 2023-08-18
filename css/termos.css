@@ -1,0 +1,73 @@
+.termos-bg {
+  background-color: var(--c11);
+}
+
+.termos-condicoes p {
+  font-size: 1.5rem;
+  color: var(--c5);
+  font-family: "Roboto";
+  font-weight: 400;
+ padding-top: 50px;
+ padding-bottom: 15px;
+}
+
+.termos-condicoes h1 {
+  font-size: 4rem;
+  color: var(--W);
+  padding-bottom: 60px;
+}
+
+.politicas h2{
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.politicas p + h2{
+    margin-top: 20px;
+}
+    
+.politicas-h2{
+    margin-top: 50px;
+}
+
+.politicas p{
+    font-size: 0.9rem;
+    color: var(--c9);
+    font-family: "Poppins";
+    font-weight: 400;
+    max-width: 80ch;
+    padding-bottom: 20px;
+}
+
+.politicas-p{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 800px){
+    .termos-condicoes h1 {
+        font-size: 3rem;
+        padding-bottom: 30px;
+      }
+      
+.termos-condicoes p {
+    font-size: 1rem;
+   padding-top: 30px;
+   padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px){
+    .termos-condicoes h1 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+      }
+      
+.termos-condicoes p {
+    font-size: 0.7rem;
+   padding-top: 30px;
+   padding-bottom: 15px;
+  }
+}
+

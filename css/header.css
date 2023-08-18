@@ -1,0 +1,87 @@
+.header-bg{
+    background-color: var(--c12);
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-menu{
+    gap: 30px;
+}
+
+.header-menu a{
+    display: inline-block;
+    font-size: 1.1rem;
+    color: var(--W);
+    padding: 16px 0px;
+    position: relative;
+}
+
+.header-menu a::after{
+    content: "";
+    background-color: var(--W);
+    height: 2px;
+    width: 0%;
+    display: block;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+
+.header-menu a:hover:after{
+    width: 100%;
+    position: absolute;
+}
+
+@media (max-width: 800px){
+    .header-menu a::after{
+        display: none;
+    }
+    .header-menu a{
+        background-color: var(--c11);
+        padding: 10px 20px;
+        border-radius: 4px;
+    }
+    .header-menu a:hover{
+        background-color: var(--c10);
+    }
+}
+
+@media (max-width: 600px){
+    .header-menu a{
+        padding: 10px 10px;
+    }
+    .header-menu{
+        gap: 15px;
+    }
+    .header{
+        gap:30px;
+    }
+    .header a, nav, .header-menu li {
+        margin: auto;
+    }
+}
+
+@media (max-width: 460px){
+.header{
+    gap: 0px;
+}
+
+@media (max-width: 400px){
+    .header-menu a{
+        padding: 8px 8px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .header{
+        padding: 10px;
+    }
+}
+}
+    @media (max-width: 350px){
+        .header-menu{
+            gap: 5px;
+        }
+    }

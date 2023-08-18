@@ -1,0 +1,36 @@
+@import url(header.css);
+@import url(utilitario.css);
+@import url(introducao.css);
+@import url(escolha.css);
+@import url(tecnologias.css);
+@import url(parceiros.css);
+@import url(depoimento.css);
+@import url(seguros.css);
+@import url(footer.css);
+@import url(termos.css);
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0x;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+h1, h2, h3, p,ul,li{
+    margin: 0px;
+    padding: 0px;
+}
