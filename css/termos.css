@@ -1,7 +1,14 @@
 .termos-bg {
   background-color: var(--c11);
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
+.politicas{ 
+padding-right: 20px;
+padding-left: 20px;
+
+}
 .termos-condicoes p {
   font-size: 1.5rem;
   color: var(--c5);
@@ -9,12 +16,14 @@
   font-weight: 400;
  padding-top: 50px;
  padding-bottom: 15px;
+ 
 }
 
 .termos-condicoes h1 {
   font-size: 4rem;
   color: var(--W);
   padding-bottom: 60px;
+
 }
 
 .politicas h2{
