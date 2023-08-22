@@ -1,0 +1,137 @@
+.nossas-bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nossas-bicicletas h2 {
+  font-size: 2rem;
+  margin-bottom: 21px;
+  font-family: "Poppins";
+  font-weight: 600;
+  position: relative;
+}
+
+.nossas-bicicletas h2::before {
+  content: "";
+  height: 8px;
+  width: 13px;
+  background-color: var(--p1);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nossas-bicicletas h2::after {
+  content: "R$4999";
+  background-color: var(--c11);
+  color: var(--W);
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: -140px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nossas-bicicletas p {
+  color: var(--c8);
+  max-width: 60ch;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.p-bicicletas p {
+  color: var(--c9);
+  font-family: "Poppins";
+  font-weight: 600;
+  display: flex;
+  margin: 0;
+}
+
+.p-bicicletas {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.p-bicicletas img {
+  height: 22px;
+}
+
+.nossas-bicicletas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nossas-bicicletas-grid a {
+  align-self: end;
+  display: flex;
+  justify-self: end;
+  font-family: "Poppins";
+  font-weight: 600;
+  gap: 10px;
+}
+
+.nossas-bicicletas-grid a img {
+  height: 100%;
+  align-self: center;
+}
+
+.magic {
+  background-color: var(--c11);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: inset 400px 0px white;
+  border-radius: 4px;
+}
+
+.magic h2 {
+  color: var(--W);
+}
+
+.magic p {
+  color: var(--c6);
+}
+
+@media (max-width: 1200px) {
+  .magic {
+    box-shadow: inset 200px 0px white;
+  }
+  .nossas-bicicletas {
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nossas-bicicletas {
+    grid-template-columns: 1fr;
+  }
+  .magic {
+    box-shadow: inset 0px 0px white;
+  }
+}
+
+@media (max-width: 450px) {
+  .nossas-bicicletas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nossas-bicicletas-grid a {
+    align-self: start;
+    justify-self: start;
+    gap: 10px;
+    margin-top: 30px;
+  }
+}
