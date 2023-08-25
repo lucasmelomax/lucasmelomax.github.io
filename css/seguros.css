@@ -3,12 +3,14 @@
   padding-bottom: 70px;
 }
 
+.seguros-bg-2 {
+  background-color: var(--c12);
+  padding-bottom: 70px;
+}
+
 .seguros-bg h2 {
   color: var(--W);
   font-size: 4rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
   padding: 60px 20px 50px 20px;
 }
 
@@ -53,7 +55,7 @@
   font-size: 1.1rem;
 }
 
-.prata-ouro .botao:hover{
+.prata-ouro .botao:hover {
   background-color: var(--c11);
 }
 
@@ -81,7 +83,7 @@
   display: inline-block;
 }
 
-.b-amarelo .botao{
+.b-amarelo .botao {
   background-color: var(--);
   background-color: var(--p1);
   color: var(--p5);
@@ -89,55 +91,162 @@
   font-weight: 600;
 }
 
-.b-amarelo .botao:hover{
+.b-amarelo .botao:hover {
   background-color: var(--p2);
 }
 
 .seguros-bg .flex {
-    justify-content: space-between;
-    flex-wrap: initial;
-    flex: none;
+  justify-content: space-between;
+  flex-wrap: initial;
+  flex: none;
+}
+
+.seguros-bg-2 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.seguros-bg-2 h1 {
+  padding-top: 100px;
+
+  font-size: 4rem;
+  color: var(--W);
+  padding-bottom: 60px;
+}
+
+.vantagens-seguros {
+  color: var(--W);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 100px;
+}
+
+.vantagens-seguros h3 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.vantagens-seguros p {
+  color: var(--c4);
+}
+
+.perguntas-frequentes h1 {
+  font-size: 4rem;
+  padding: 100px 20px 50px 20px;
+}
+
+.perguntas-div {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.perguntas-div::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--p1);
+  height: 8px;
+  width: 10px;
+  position: absolute;
+  top: 37px;
+  left: 30px;
+}
+
+.perguntas-div::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icones/seta-abrir.svg);
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.perguntas-div:nth-child(even) {
+  background-color: var(--c1);
+}
+
+.perguntas-div h3 {
+  padding: 30px;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.perguntas-div p {
+  padding: 0px 30px 30px 30px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--c8);
+  max-width: 80ch;
+}
+
+.perguntas-div:nth-child(7) p {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .seguros-bg h2 {
+    padding: 60px 20px 40px 20px;
   }
-
-@media (max-width: 1200px){
-    .seguros-bg h2 {
-        padding: 60px 20px 40px 20px;
-      }
-      .prata-ouro .botao {
-        margin-left: 40px;
-        margin-bottom: 40px;
-        padding: 10px 20px;
-        font-size: 1rem;
-      }
-      .ouro {
-        padding: 20px 30px;
-      }
-      .prata{
-        padding: 20px 30px;
-      }
-      .prata-ouro li {
-        padding-bottom: 20px;
-      }
+  .prata-ouro .botao {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .ouro {
+    padding: 20px 30px;
+  }
+  .prata {
+    padding: 20px 30px;
+  }
+  .prata-ouro li {
+    padding-bottom: 20px;
+  }
 }
 
-@media (max-width: 850px){
-    .seguros-bg .grid{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 850px) {
+  .seguros-bg .grid {
+    grid-template-columns: 1fr;
+  }
+  .seguros-bg-2 h1 {
+    padding-top: 50px;
+  }
 }
 
+@media (max-width: 700px) {
+  .vantagens-seguros {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-@media (max-width: 450px){
-    .ouro{
-        font-size: 1.5rem;
-    }
-    .prata{
-        font-size: 1.5rem;
-    }
-    .valor-seguro {
-        font-size: 1.4rem;
-        padding-top: 20px;
-        padding-right: 20px;
-
-      }
+@media (max-width: 450px) {
+  .ouro {
+    font-size: 1.5rem;
+  }
+  .prata {
+    font-size: 1.5rem;
+  }
+  .valor-seguro {
+    font-size: 1.4rem;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .seguros-bg .grid {
+    gap: 10px 10px;
+  }
+  .vantagens-seguros h3 {
+    font-size: 1.2rem;
+  }
+  .seguros-bg-2 h1 {
+    font-size: 3rem;
+  }
+  .perguntas-frequentes h1{
+    font-size: 3rem;
+  }
 }

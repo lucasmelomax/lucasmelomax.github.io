@@ -94,3 +94,9 @@
     }
 
 }
+
+@media (max-width: 500px){
+  .article-tecnologias h2 {
+    font-size: 2rem;
+  }
+}
