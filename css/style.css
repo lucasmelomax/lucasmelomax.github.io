@@ -9,6 +9,9 @@
 @import url(footer.css);
 @import url(termos.css);
 @import url(nossas-bicicletas.css);
+@import url(contatos.css);
+@import url(formulario.css);
+@import url(magic.css);
 
 body{
     margin: 0px;

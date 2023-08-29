@@ -1,0 +1,176 @@
+
+.loja-online {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  padding-bottom: 150px;
+}
+
+#contatos-html .loja-bg {
+  background-image: linear-gradient(to bottom, var(--c11) 50%, var(--c1) 50%);
+}
+
+.loja-grid1 {
+  background-color: var(--c12);
+  color: var(--W);
+  border-radius: 4px 0px 0px 4px;
+}
+
+.loja-grid1 h3 {
+  padding: 60px 50px;
+}
+
+.loja-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-left: 50px;
+  gap: 10px;
+}
+
+.loja-grid li,
+a {
+  margin-bottom: 10px;
+  color: var(--c5);
+  display: block;
+}
+
+.loja-grid-margin {
+  margin-bottom: 50px;
+}
+
+.loja-grid-margin1 {
+  margin-bottom: 70px;
+}
+
+.loja-grid-img {
+  display: flex;
+  gap: 20px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.loja-online2 {
+  background-color: var(--W);
+}
+
+.contato-formulario {
+  border-radius: 0 4px 4px 0;
+}
+
+.lojas-locais {
+  background-color: var(--c1);
+}
+
+.lojas-locais h1 {
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lojas-mapas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 200px;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+
+.rj {
+  background-color: var(--W);
+  box-shadow: 1px 1px 10px var(--c4);
+}
+
+.rj h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.rj ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.rj ul:before {
+  content: "";
+  display: inline-block;
+  height: 60px;
+  width: 2px;
+  background-color: var(--c2);
+  position: absolute;
+  left: 30px;
+}
+
+.rj ul::after {
+  content: "";
+  display: inline-block;
+  height: 60px;
+  width: 2px;
+  background-color: var(--c2);
+  position: absolute;
+  right: 285px;
+}
+
+.rj p {
+  background-image: url(../img/icones/horario.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.rj li,
+a {
+  color: var(--c8);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .lojas-mapas {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .rj {
+    background-color: var(--W);
+    box-shadow: none;
+  }
+  .rj p {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .loja-online {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+    .rj ul {
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+        padding-left: 60px;
+      }
+
+      .rj li {
+        margin-bottom: 20px;
+        padding-left: 0px;
+      }
+      .rj ul:before {
+        height: 0px;
+        width: 0px;
+      }
+      
+      .rj ul::after {
+        height: 0px;
+        width: 0px;
+  }
+  
+}

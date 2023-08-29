@@ -1,0 +1,129 @@
+.magic-bg {
+  background-color: var(--c11);
+}
+
+.magic-might {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+
+.magic-imagens-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.magic-comprar p {
+  color: var(--c5);
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.magic-comprar-botao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
+  gap: 20px;
+  justify-items: start;
+  align-items: center;
+}
+
+.magic-comprar-botao p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  color: var(--c6);
+}
+
+.magic-estoque {
+  background-color: var(--c12);
+  display: flex;
+  margin-bottom: 5px;
+  gap: 10px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.informacoes-comprar h3 {
+  font-size: 0.7rem;
+  color: var(--W);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.informacoes-comprar ul:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--c12);
+  padding: 20px 40px;
+  align-content: start;
+  border-radius: 4px;
+  gap: 0 30px;
+}
+
+.informacoes-comprar h4 {
+  color: var(--W);
+  font-size: 1.1rem;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.informacoes-comprar p {
+  color: var(--c5);
+  font-size: 0.9rem;
+  margin: 10px 0px;
+}
+
+.ficha-bicicleta p,
+span {
+  color: var(--c5);
+  font-size: 1rem;
+}
+
+.ficha-bicicleta {
+  background-color: var(--c12);
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.ficha-bicicleta li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--c11);
+}
+
+@media (max-width: 1100px) {
+  .magic-imagens-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px){
+    .informacoes-comprar ul:nth-child(2) {
+        grid-template-columns: 1fr;
+      }
+}
+
+@media (max-width: 800px){
+    .magic-might {
+        grid-template-columns: 1fr;
+      }
+      .magic-imagens-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .magic-comprar{
+        grid-row: 1;
+      }
+}
+
+@media (max-width: 400px){
+.magic-comprar-botao {
+    display: grid;
+    grid-template-columns:1fr;
+}}
